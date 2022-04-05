@@ -1,0 +1,6 @@
+#!/bin/sh -u
+
+for binary in "anyhow-example" "thiserror-example" "maplit-example"; do
+  echo "=== $binary ==="
+  cargo run -q --bin "$binary"
+done
